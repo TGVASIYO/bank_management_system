@@ -41,10 +41,42 @@ The main objective of this project is to:
 
 ---
 
-## 🗄 DATABASE CONFIGURATION
+# ⚙ HOW THE PROGRAM WORKS
 
-### Step 1: Create Database
+1. The program connects to the MySQL database.
 
-```sql
-CREATE DATABASE bank;
-USE bank;
+2. A cursor object is created to execute SQL queries.
+
+3. The user is shown a menu with different banking options.
+
+4. The user selects an option from the menu.
+
+5. Based on the selected option, appropriate SQL queries are executed:
+   - INSERT (for creating accounts)
+   - SELECT (for viewing details and checking balance)
+   - UPDATE (for deposit and withdrawal)
+
+6. Any changes made to the database are committed using `commit()`.
+
+7. The program runs inside a loop and continues showing the menu until the
+
+
+# ⚠ REQUIREMENTS
+
+- MySQL Server must be running.
+- The database must be created before running the program.
+- Correct MySQL username and password must be provided in the connection settings.
+
+---
+
+# 🔮 FUTURE IMPROVEMENTS
+
+- Add login authentication system.
+- Implement transaction history tracking.
+- Add transfer money feature between accounts.
+- Develop a GUI using Tkinter.
+- Improve error and exception handling.
+- Create an admin panel for managing accounts.
+
+
+
