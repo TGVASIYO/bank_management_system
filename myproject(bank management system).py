@@ -73,13 +73,7 @@ def deposit(ac):
     mycon.commit()
     print("Deposit successful!")
 
-def insider():
-    cursor.execute("select * from accounts where name ='pr%'")
-    records=cursor.fetchall()
-    for row in records:
-        print("Account Number:", record[0])
-        print("Name:", record[1])
-        print("Balance:", record[2])
+
 
 
 
@@ -121,3 +115,4 @@ while(choice>=1 and choice<=5):
     Enter your choice: """))
 
 mycon.close()
+
